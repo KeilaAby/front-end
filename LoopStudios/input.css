@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    h5 {
+        @apply absolute font-light px-6 duration-200 w-52 bottom-4 md:bottom-8 md:px-10 group-hover:scale-110 group-hover:text-black
+    }
+};
+
+@layer components {
+
+    .btn {
+        @apply uppercase py-2 px-10 text-lg font-alata border-2 border-black tracking-widest hover:bg-black hover:text-white duration-200
+    }
+
+    .item-container {
+        @apply text-2xl flex flex-col justify-between w-full space-y-6 text-white uppercase md:flex-row md:space-y-0 md:space-x-8
+    }
+
+    .item {
+
+        @apply relative overflow-hidden md:w-1/4 mx-4
+    }
+
+    .item-gradient {
+        @apply absolute top-0 bottom-0 right-0 left-0 bg-gradient-to-b from-transparent to-gray-900 group-hover:from-gray-50 group-hover:to-white group-hover:opacity-70
+    }
+
+    .hamburger {
+        @apply cursor-pointer w-6 h-6 relative transition-all duration-500
+    }
+    .hamburger-top,
+    .hamburger-middle,
+    .hamburger-bottom {
+        @apply absolute top-0 right-0 bg-white w-6 h-0.5 rotate-0 transition-all duration-500
+    }
+
+    .hamburger-middle {
+        @apply translate-y-2
+    }
+
+    .hamburger-bottom {
+        @apply translate-y-4
+    }
+
+    .open {
+        @apply rotate-90
+    }
+
+    .open .hamburger-top {
+        @apply rotate-45 translate-y-1 translate-x-1
+    }
+
+    .open .hamburger-middle {
+        @apply hidden
+    }
+
+    .open .hamburger-bottom {
+        @apply -rotate-45 translate-y-1 translate-x-1
+    }
+
+
+
+
+
+
+};
+
+/*.hamburger {
+    cursor:pointer;
+    width:24px;
+    height:24px;
+    transition: all 0.25s;
+    position : relative
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+
+    position: absolute;
+    width:24px;
+    height:2px;
+    top:0;
+    left:0;
+    background:#fff;
+    transform:rotate(0);
+    transition:all 0.5s;
+}
+
+.hamburger-middle {
+    transform:translateY(7px)
+}
+
+.hamburger-bottom {
+    transform:translateY(14px)
+}*/
+
+
+
+
+
+
